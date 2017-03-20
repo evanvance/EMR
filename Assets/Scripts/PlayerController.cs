@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 
 		myRigidBody.velocity = new Vector2 (moveSpeed, myRigidBody.velocity.y);
 
-		if (Input.GetKeyDown (KeyCode.Space) && onGround) {
+		if (Input.GetKeyDown (KeyCode.Mouse0) && onGround) {
 			myRigidBody.velocity = new Vector2 (myRigidBody.velocity.x, jumpForce);
 		}
 
